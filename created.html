@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 90%;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 30px;
+            border-radius: 12px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .header {
+            background: linear-gradient(135deg, #ff9800, #ffb74d);
+            color: white;
+            padding: 20px;
+            border-radius: 12px 12px 0 0;
+            text-align: center;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .content p {
+            margin: 0 0 15px;
+        }
+        .highlight {
+            color: #ff9800;
+            font-weight: bold;
+        }
+        .new-user-box {
+            border: 1px solid #ff9800;
+            background-color: #fff3e0;
+            color: #ff9800;
+            padding: 10px;
+            margin: 20px 0;
+            border-radius: 8px;
+            display: inline-block;
+        }
+        .button-container {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #ffffff;
+            background-color: #ff9800;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 0 auto 15px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .button:hover {
+            background-color: #e68900;
+            transform: scale(1.05);
+        }
+        .logo {
+            width: 60px;
+            height: auto;
+            margin: 10px auto;
+        }
+        .footer p {
+            margin: 10px 0;
+            font-size: 0.9em;
+            color: #777;
+        }
+        .signature {
+            margin-top: 30px;
+            font-size: 18px;
+            color: #333;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>New User Signup Notification</h1>
+        </div>
+        <div class="content">
+            <p class="highlight">Dear Admin,</p>
+            <p>We are pleased to inform you that a new user has signed up. Please review the user's details below and provide the necessary <strong>salary</strong> and <strong>department</strong> information:</p>
+            <div class="new-user-box">
+                <p><strong>New User:</strong> <?= name ?></p>
+                <p><strong>Email:</strong> <?= email ?></p>
+            </div>
+            <p>Your prompt action will help us ensure that the new user can start their work without any delays.</p>
+            <div class="button-container">
+                <a class="button" href="https://www.appsheet.com/newshortcut/890f87b2-cb90-47a7-be56-82fbf77d9e39">Go to Website</a>
+                <img class="logo" src="https://www.appsheet.com/Content/img/appicons/inspections-surveys.png" alt="Company Logo">
+            </div>
+            <p class="signature">Best regards,<br>Human Resource</p>
+        </div>
+        <div class="footer">
+            <p>This is an automated message. Please do not reply to this email.</p>
+        </div>
+    </div>
+</body>
+</html>
